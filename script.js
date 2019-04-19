@@ -1,25 +1,23 @@
-function send_email(choise_key, choise_val){
-    const result = "Selected button: " + choise_key + " (" + choise_val + ")"
+function send_email(){
+    
 
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "vladozavr99@gmail.com",
         Password : "6863bbaf-1d9a-43c6-9825-a9cac6cb5b03",
-        To : "vlp@25k.ru",
+        To : 'vlp@25k.ru',
         From : "test@gmail.com",
         Subject : "She answered!",
         Body : "test"
     }).then(
-        message => console.log(message),
-        $("#result").removeClass("disabled"),
-        $("#action").addClass("disabled")
+        message => alert(message)
     );
 }
 
 
    
 
-$("#send_message").click(function () { send_email("1", "что-то посмотреть") })
+$("#send_message").click(function () { send_email() })
     
 
 
