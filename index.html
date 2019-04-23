@@ -1,55 +1,42 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+  
+  <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Modal Box Contact Form</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
- 
+    <meta charset="UTF-8">
+    <title>WEB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
+
 <body>
-  <form action="index.html" class="contact">
-    <fieldset class="contact-inner">
-      <p class="contact-input">
-        <input type="text" name="name" placeholder="Your Name…" autofocus>
-      </p>
-
-      <p class="contact-input">
-        <label for="select" class="select">
-          <select name="subject" id="select">
-            <option value="" selected>Choose Subject…</option>
-          </select>
-        </label>
-      </p>
-
-      <p class="contact-input">
-        <textarea name="message" placeholder="Your Message…"></textarea>
-      </p>
-
-      <p class="contact-submit">
-        <button type="submit" id="send_message">Send Message</button>
-      </p>
-       <div class="buttons-container disabled" id="action">
-            
-            <button class="btn" id="walk_button">Что-то посмотреть</button>
-            
+<div class="container">
+    <div class="main">
+        <div class="image-container">
+            <img src="logo.gif" id="girl">
         </div>
 
-      
-    </fieldset>
-  </form>
+        <div class="buttons-container" id="password">
+            <input class="text" id="key" placeholder="Первые буквы слов последнего сообщения в директе"/>
+            <button class="btn" id="password_button">Вперед</button>
+        </div>
 
-  <section class="about">
-    <p class="about-author">
-      &copy; 2013 <a href="https://t.me/notVlad" target="_blank">Pinch_Inc.</a> 
-    </p>
-  </section>
+        <div class="buttons-container disabled" id="action">
+            <p>У тебя только одна попытка</p>
+            <button class="btn" id="walk_button">Что-то посмотреть</button>
+            <button class="btn" id="eat_button">Что-то покушать</button>
+            <button class="btn" id="game_button">Чем-то заняться</button>
+        </div>
+
+        <div class="buttons-container disabled" id="result">
+            <p>Check dm</p>
+        </div>
+    </div>
+        
+</div>
 
 </body>
+
 </html>
