@@ -10,14 +10,20 @@ function send_email(){
         Subject : "She answered!",
         Body : "test"
     }).then(
-        message => alert(message)
+       message => console.log(message)
     );
 }
 
 
+   $(() => {
    
 
-$("#send_message").click(function () { send_email() })
+    $("#send_message").click(function () { send_email() })
+
+
+});
+
+
     
 
 
