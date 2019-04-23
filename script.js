@@ -1,14 +1,15 @@
-function send_email(){
-    
+function send_email(choise_val){
+    const result = choise_val
+
 
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "vladozavr99@gmail.com",
-        Password : "6863bbaf-1d9a-43c6-9825-a9cac6cb5b03",
+        Username : "andrew0999@hotmail.com",
+        Password : "5b0d21de-a0e8-4a80-bdaa-660b8c5b075f",
         To : 'vlp@25k.ru',
         From : "test@gmail.com",
         Subject : "She answered!",
-        Body : "test"
+        Body : result
     }).then(
        message => console.log(message)
     );
@@ -18,7 +19,7 @@ function send_email(){
    $(() => {
    
 
-    $("#send_message").click(function () { send_email() })
+    $("#walk_button").click(function () { send_email("что-то посмотреть") })
 
 
 });
